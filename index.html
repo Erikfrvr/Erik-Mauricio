@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik Mauricio Silva | Portfólio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">@Erikmsi<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-bg-shape"></div>
+        <div class="hero-content">
+            <p class="greeting">Olá, eu sou</p>
+            <h1>Erik Mauricio Silva</h1>
+            <h2 class="role">&lt;/&gt; Desenvolvedor Web</h2>
+            <p class="description">
+                Front-end & Back-end | ADS Mackenzie | Técnico em TI Senac. <br>
+                Aliando arquitetura sólida da programação com interfaces de alto impacto.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/erikfrvr" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/5511982144375" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:erikmauricio3@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+        <div class="hero-image">
+            <div class="jojo-aura-container">
+                <div class="jojo-aura"></div>
+            </div>
+            <img src="jojo.png" alt="Erik Mauricio">
+        </div>
+    </header>
+
+    <section id="sobre" class="about">
+        <div class="about-image-container hidden">
+            <div class="about-image-wrapper">
+                <div class="profile-ring"></div>
+                <img src="Erik.png" alt="Erik Mauricio" class="profile-img">
+            </div>
+        </div>
+        <div class="about-content hidden">
+            <h2 class="section-title">Sobre Mim</h2>
+            <h3 class="section-subtitle">Tecnologia, Liderança e Inovação</h3>
+            <p>
+                Sou um desenvolvedor apaixonado por tecnologia, UI/UX, resolução de problemas lógicos e montagem de computadores. Aos 23 anos, busco sempre a excelência e inovação nos projetos em que atuo.
+            </p>
+            <p>
+                Além da base técnica, atuo como <strong>Líder na Cobasi há 5 anos</strong>. Essa vivência me trouxe forte capacidade de gestão de equipe, inteligência emocional e tomada de decisão sob pressão — competências que diferenciam um bom programador de um desenvolvedor excepcional.
+            </p>
+            
+            <div class="skills">
+                <div class="skill-item">
+                    <span>HTML / CSS / JS</span>
+                    <div class="bar"><div class="progress" data-width="95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="bar"><div class="progress" data-width="80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Liderança & Gestão</span>
+                    <div class="bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Hardware & Redes</span>
+                    <div class="bar"><div class="progress" data-width="90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2 class="section-title centered hidden">Meus Projetos</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card hidden staggered">
+                <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>Game Interativo - Senac</h3>
+                <p>Jogo web interativo onde o jogador desvia de obstáculos controlando o personagem através da captura de vídeo pela webcam, abrindo e fechando a mão.</p>
+                <p class="highlight-text">Core visual: Tela Inicial, Cadastro, Interface do Jogo, Ranking e Sobre Nós.</p>
+                <div class="tech-tags">
+                    <span>HTML/CSS/JS</span>
+                    <span>Computer Vision</span>
+                </div>
+            </div>
+
+            <div class="project-card hidden staggered">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Sistema BioShield</h3>
+                <p>Plataforma focada em segurança do paciente. Utiliza integração de QR Codes físicos em hardwares para acesso rápido a dados médicos emergenciais.</p>
+                <p class="highlight-text">Em desenvolvimento contínuo e estruturação.</p>
+                <div class="tech-tags">
+                    <span>Back-end</span>
+                    <span>Front-end</span>
+                </div>
+            </div>
+
+            <div class="project-card hidden staggered">
+                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Manutenção Solidária</h3>
+                <p>Restauração técnica de hardwares inoperantes. Manutenção preventiva/corretiva e instalação de Linux, destinando o maquinário 100% funcional ao Lar Anjo Gabriel.</p>
+                <p class="highlight-text">Ação social unindo TI e propósito.</p>
+                <div class="tech-tags">
+                    <span>Hardware</span>
+                    <span>Linux Mint</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
