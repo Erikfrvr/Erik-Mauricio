@@ -653,12 +653,11 @@ nav {
     .media-frame img {
         width: 100%;
         height: auto;
-        max-height: 300px;
-        object-fit: cover;
     }
 
     .project-gallery--compact .media-frame img {
-        max-height: 160px;
+        height: 160px;
+        object-fit: cover;
     }
 }
 
