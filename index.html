@@ -4,195 +4,296 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Erik Mauricio Silva | Portfólio</title>
-<meta name="description" content="Portfólio de Erik Mauricio Silva — Desenvolvedor Front-end & Back-end, com experiência em hardware, redes e liderança de equipe.">
+<meta name="description" content="Portfólio de Erik Mauricio Silva — Suporte em TI, Redes e Desenvolvimento Front-end & Back-end, com experiência em hardware e liderança de equipe.">
+<meta name="theme-color" content="#0a0714">
+<meta property="og:title" content="Erik Mauricio Silva | Portfólio">
+<meta property="og:description" content="Suporte em TI & Redes · Front-end & Back-end">
+<meta property="og:image" content="images/erik.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%238b6bff'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='700' text-anchor='middle' fill='%23fff'>E_</text></svg>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">@erikmsi<span>.</span></div>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <nav id="navbar">
+        <a href="#home" class="logo">@erikmsi<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home">home</a></li>
-            <li><a href="#sobre">sobre</a></li>
-            <li><a href="#projetos">projetos</a></li>
-            <li><a href="#contato">contato</a></li>
+            <li><a href="#home"><em>01.</em>home</a></li>
+            <li><a href="#sobre"><em>02.</em>sobre</a></li>
+            <li><a href="#projetos"><em>03.</em>projetos</a></li>
+            <li><a href="#contato"><em>04.</em>contato</a></li>
         </ul>
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
 
     <header id="home" class="hero">
-        <div class="hero-bg-shape"></div>
-        <div class="hero-content">
-            <p class="eyebrow">$ whoami<span class="cursor"></span></p>
-            <h1>Erik Mauricio Silva</h1>
-            <h2 class="role">Suporte em TI & Redes | &amp; Frontend & Backend</h2>
-            <p class="description">
-                Monto e conserto computadores, configuro redes e desenvolvo aplicações web, do frontend ao backend. Formado em Análise e Desenvolvimento de Sistemas pelo Mackenzie, cursando Técnico em Informática no Senac, com certificações Cisco em redes e cibersegurança e 5 anos liderando equipe na Cobasi.
-            </p>
-            <div class="hero-actions">
-                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                <a href="#contato" class="btn btn-outline">Falar Comigo</a>
+        <div class="glow glow--one" aria-hidden="true"></div>
+        <div class="glow glow--two" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <p class="eyebrow">$ whoami<span class="cursor"></span></p>
+                <h1>Erik Mauricio <span class="gradient-text">Silva</span></h1>
+                <h2 class="role">
+                    <span class="role-static">Suporte em TI &amp; Redes</span>
+                    <span class="role-sep">//</span>
+                    <span class="role-typed" id="roleTyped">Front-end &amp; Back-end</span>
+                </h2>
+                <p class="description">
+                    Monto e conserto computadores, configuro redes e desenvolvo aplicações web, do frontend ao backend. Formado em Análise e Desenvolvimento de Sistemas pelo Mackenzie, cursando Técnico em Informática no Senac, com certificações Cisco em redes e cibersegurança e 5 anos liderando equipe na Cobasi.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contato" class="btn btn-outline">Falar Comigo</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/erikfrvr" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/5511982144375" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/erik-mauricio-897624351/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:erikmauricio3@hotmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/erikfrvr" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-                <a href="https://wa.me/5511982144375" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/erik-mauricio-897624351/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:erikmauricio3@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal__bar">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                        <span class="terminal__title">erik@portfolio: ~</span>
+                    </div>
+                    <pre class="terminal__body"><code><span class="t-prompt">erik@portfolio:~$</span> cat perfil.json
+{
+  <span class="t-key">"nome"</span>: <span class="t-str">"Erik Mauricio"</span>,
+  <span class="t-key">"foco"</span>: [<span class="t-str">"Suporte TI"</span>, <span class="t-str">"Redes"</span>, <span class="t-str">"Web"</span>],
+  <span class="t-key">"formacao"</span>: <span class="t-str">"ADS · Mackenzie"</span>,
+  <span class="t-key">"cursando"</span>: <span class="t-str">"Técnico · Senac"</span>,
+  <span class="t-key">"certs"</span>: [<span class="t-str">"Cisco Redes"</span>, <span class="t-str">"Cisco Cyber"</span>],
+  <span class="t-key">"lideranca"</span>: <span class="t-str">"5 anos · Cobasi"</span>,
+  <span class="t-key">"status"</span>: <span class="t-ok">"aberto a oportunidades"</span>
+}
+<span class="t-prompt">erik@portfolio:~$</span> <span class="cursor"></span></code></pre>
+                </div>
+                <div class="floating-badge floating-badge--top"><i class="fa-solid fa-network-wired"></i> Cisco Certified</div>
+                <div class="floating-badge floating-badge--bottom"><i class="fa-solid fa-code"></i> Full-stack</div>
             </div>
-      
+        </div>
+
+        <div class="container">
+            <ul class="stats">
+                <li><strong data-count="5">5</strong><span>anos liderando equipe</span></li>
+                <li><strong data-count="20" data-suffix="+">20+</strong><span>PCs recuperados</span></li>
+                <li><strong data-count="2">2</strong><span>certificações Cisco</span></li>
+                <li><strong data-count="14">14</strong><span>pessoas no MotionVerse</span></li>
+            </ul>
+        </div>
+
+        <a href="#sobre" class="scroll-hint" aria-label="Rolar para Sobre"><span></span></a>
     </header>
 
-    <section id="sobre" class="about">
-        <div class="about-image-container hidden">
-            <div class="about-image-wrapper">
-                <div class="profile-ring"></div>
-                <img src="images/Erik.png" alt="Erik Mauricio" class="profile-img">
-            </div>
-        </div>
-        <div class="about-content hidden">
-            <p class="eyebrow">Tech = ❤️<span class="cursor"></span></p>
-            <h2 class="section-title">Sobre mim</h2>
-            <p>
-                Curto tecnologia do jeito prático: montar máquinas, fazer manutenção preventiva, configurar redes e entender por que algo travou. Gosto tanto de abrir um gabinete quanto de quebrar a cabeça no VS Code.
-            </p>
-            <p>
-                Sou formado em Análise e Desenvolvimento de Sistemas pelo Mackenzie, estou no Técnico em Informática do Senac e tenho certificações Cisco em redes e cibersegurança.
-            </p>
-            <p>
-                Há <strong>5 anos lidero uma equipe na Cobasi</strong>, o que me ensinou algo que só código não dá: lidar com pessoas, decidir rápido sob pressão e manter tudo funcionando quando o combinado muda de última hora.
-            </p>
-
-            <div class="skills">
-                <div class="skill-item">
-                    <span>HTML / CSS / JS</span>
-                    <div class="bar"><div class="progress" data-width="84%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Python</span>
-                    <div class="bar"><div class="progress" data-width="80%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Liderança &amp; Gestão de Equipe</span>
-                    <div class="bar"><div class="progress" data-width="88%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Hardware &amp; Redes</span>
-                    <div class="bar"><div class="progress" data-width="95%"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos" class="projects">
-        <p class="eyebrow centered hidden">Desenvolvimentos 🧑🏽‍💻 <span class="cursor"></span></p>
-        <h2 class="section-title centered hidden">Meus Projetos</h2>
-        <div class="projects-grid">
-
-            <div class="project-card project-card--featured hidden staggered">
-                <div class="project-card__info">
-                    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Sistema BioShield</h3>
-                    <p>Plataforma de saúde preventiva com ficha médica de emergência via QR Code, que qualquer pessoa acessa pela câmera do celular sem instalar nada, junto com lembretes de medicamentos com confirmação de dose e um modo cuidador para a família acompanhar à distância. Projeto na fase semifinal do Empreenda Senac 2026.</p>
-                    <p class="highlight-text">Em desenvolvimento: backend em TypeScript com Express e MySQL, seguindo arquitetura em camadas.</p>
-                    <div class="tech-tags">
-                        <span>Back-end</span>
-                        <span>Front-end</span>
-                        <span>TypeScript</span>
-                    </div>
-                    <a href="https://github.com/Erikfrvr/bioshield" target="_blank" rel="noopener" class="btn btn-outline project-link"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
-                </div>
-                <div class="project-gallery project-gallery--framed">
-                    <div class="media-frame"><img src="images/home.png" alt="Tela inicial do Sistema BioShield"></div>
-                    <div class="media-frame"><img src="images/emergencia_publica.png" alt="Tela de medicamentos do Sistema BioShield"></div>
-                    <div class="media-frame"><img src="images/remedios.png" alt="Tela do cuidador do Sistema BioShield"></div>
-                    <div class="media-frame"><img src="images/cuidador.png" alt="Tela do Sistema BioShield 4"></div>
-                </div>
-            </div>
-
-            <div class="project-card project-card--featured hidden staggered">
-                <div class="project-card__info">
-                    <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
-                    <h3>MotionVerse | Senac</h3>
-                    <p>Jogo web 2D em pixel art onde o jogador guia a Clara, sugada para dentro de um computador, coletando itens só com gestos: quatro webcams captam ao mesmo tempo o abrir e fechar da mão, e cada pessoa comanda um movimento. Projeto em equipe de 14 pessoas no Senac, onde também produzi as cutscenes e a trilha sonora.</p>
-                    <p class="highlight-text">Minha parte: home, cadastro, interface do jogo, sobre nós e acessibilidade com leitura por voz em português.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS/JS</span>
-                        <span>Frontend</span>
-                        <span>Visão Computacional</span>
-                        <span>Acessibilidade</span>
-                    </div>
-                    <a href="https://github.com/CesarZanelatto/MotionVerse" target="_blank" rel="noopener" class="btn btn-outline project-link"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
-                </div>
-                <div class="project-gallery project-gallery--framed project-gallery--compact">
-                    <div class="media-frame"><img src="images/motion.png" alt="Tela do Game Interativo 1"></div>
-                    <div class="media-frame"><img src="images/cut.png" alt="Tela do Game Interativo 2"></div>
-                    <div class="media-frame"><img src="images/game.png" alt="Tela do Game Interativo 3"></div>
-                </div>
-            </div>
-
-            <div class="project-card project-card--featured hidden staggered">
-                <div class="project-card__info">
-                    <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                    <h3>Manutenção Solidária</h3>
-                    <p>Restauração de hardwares inoperantes: manutenção preventiva e corretiva, instalação de Linux e entrega de máquinas 100% funcionais ao Lar Anjo Gabriel.</p>
-                    <p class="highlight-text">TI e propósito andando junto.</p>
-                    <div class="tech-tags">
-                        <span>Hardware</span>
-                        <span>Linux Mint</span>
-                        <span>Ação Social</span>
+    <main>
+        <section id="sobre" class="section about">
+            <div class="container about-inner">
+                <div class="about-image-container hidden">
+                    <div class="about-image-wrapper">
+                        <div class="profile-ring"></div>
+                        <img src="images/erik.jpg" alt="Foto de Erik Mauricio" class="profile-img" loading="lazy" decoding="async">
+                        <div class="profile-tag"><span class="pulse"></span> disponível</div>
                     </div>
                 </div>
-                <div class="project-gallery project-gallery--framed">
-                    <div class="media-frame"><img src="images\doação.jpg" alt="Foto da Ação Solidária"></div>
-                    <div class="media-frame"><img src="images\doa.jpg" alt="Foto da Ação Solidária 2"></div>
-                </div>
-            </div>
+                <div class="about-content hidden">
+                    <p class="eyebrow">Tech = ❤️<span class="cursor"></span></p>
+                    <h2 class="section-title">Sobre mim</h2>
+                    <p>
+                        Curto tecnologia do jeito prático: montar máquinas, fazer manutenção preventiva, configurar redes e entender por que algo travou. Gosto tanto de abrir um gabinete quanto de quebrar a cabeça no VS Code.
+                    </p>
+                    <p>
+                        Sou formado em Análise e Desenvolvimento de Sistemas pelo Mackenzie, estou no Técnico em Informática do Senac e tenho certificações Cisco em redes e cibersegurança.
+                    </p>
+                    <p>
+                        Há <strong>5 anos lidero uma equipe na Cobasi</strong>, o que me ensinou algo que só código não dá: lidar com pessoas, decidir rápido sob pressão e manter tudo funcionando quando o combinado muda de última hora.
+                    </p>
 
-            <div class="project-card project-card--featured hidden staggered">
-                <div class="project-card__info">
-                    <div class="card-icon"><i class="fa-solid fa-computer"></i></div>
-                    <h3>Montagem e Manutenção de Computadores</h3>
-                    <p>Já arrumei mais de 20 computadores, entre amigos, vizinhos e pessoas que me procuram por indicação. Recuperei máquinas que estavam paradas há mais de 10 anos, sem funcionar, trazendo elas de volta à vida com diagnóstico, troca de peças e manutenção preventiva.</p>
-                    <p class="highlight-text">Mais de 20 computadores recuperados por indicação.</p>
-                    <div class="tech-tags">
-                        <span>Hardware</span>
-                        <span>Montagem</span>
-                        <span>Manutenção</span>
+                    <ul class="info-chips">
+                        <li><i class="fa-solid fa-graduation-cap"></i> ADS · Mackenzie</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Técnico · Senac</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Cisco Redes &amp; Cyber</li>
+                    </ul>
+
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Hardware &amp; Redes</span><span class="skill-pct">95%</span></div>
+                            <div class="bar"><div class="progress" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Liderança &amp; Gestão de Equipe</span><span class="skill-pct">88%</span></div>
+                            <div class="bar"><div class="progress" data-width="88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span>HTML / CSS / JS</span><span class="skill-pct">84%</span></div>
+                            <div class="bar"><div class="progress" data-width="84%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Python</span><span class="skill-pct">80%</span></div>
+                            <div class="bar"><div class="progress" data-width="80%"></div></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-gallery project-gallery--framed project-gallery--compact">
-                    <div class="media-frame"><img src="images\neide.jpg" alt="Foto de Montagem e Manutenção de Computadores 1"></div>
-                    <div class="media-frame"><img src="images\aberto.jpg" alt="Foto de Montagem e Manutenção de Computadores 2"></div>
-                    <div class="media-frame"><img src="images\macabrt.jpg" alt="Foto de Montagem e Manutenção de Computadores 3"></div>
-                    <div class="media-frame"><img src="images\mac.jpg" alt="Foto de Montagem e Manutenção de Computadores 4"></div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section projects">
+            <div class="container">
+                <div class="section-head hidden">
+                    <p class="eyebrow centered">Desenvolvimentos 🧑🏽‍💻<span class="cursor"></span></p>
+                    <h2 class="section-title centered">Meus Projetos</h2>
+                    <p class="section-sub">Do código à chave de fenda: projetos de software, hardware e impacto social.</p>
+                </div>
+
+                <div class="projects-list">
+
+                    <article class="project-card hidden">
+                        <div class="project-card__info">
+                            <div class="project-meta">
+                                <span class="project-index">01</span>
+                                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <span class="project-badge">Semifinal Empreenda Senac 2026</span>
+                            </div>
+                            <h3>Sistema BioShield</h3>
+                            <p>Plataforma de saúde preventiva com ficha médica de emergência via QR Code, que qualquer pessoa acessa pela câmera do celular sem instalar nada, junto com lembretes de medicamentos com confirmação de dose e um modo cuidador para a família acompanhar à distância.</p>
+                            <p class="highlight-text"><i class="fa-solid fa-code-branch"></i> Em desenvolvimento: backend em TypeScript com Express e MySQL, seguindo arquitetura em camadas.</p>
+                            <div class="tech-tags">
+                                <span>Back-end</span>
+                                <span>Front-end</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <a href="https://github.com/Erikfrvr/bioshield" target="_blank" rel="noopener" class="btn btn-outline project-link"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+                        </div>
+                        <div class="gallery gallery--phones">
+                            <figure class="phone"><img src="images/home.png" alt="Tela inicial do Sistema BioShield" loading="lazy" decoding="async"></figure>
+                            <figure class="phone"><img src="images/emergencia_publica.png" alt="Ficha de emergência pública do BioShield" loading="lazy" decoding="async"></figure>
+                            <figure class="phone"><img src="images/remedios.png" alt="Tela de medicamentos do BioShield" loading="lazy" decoding="async"></figure>
+                            <figure class="phone"><img src="images/cuidador.png" alt="Tela do modo cuidador do BioShield" loading="lazy" decoding="async"></figure>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--reverse hidden">
+                        <div class="project-card__info">
+                            <div class="project-meta">
+                                <span class="project-index">02</span>
+                                <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                                <span class="project-badge">Equipe de 14 · Senac</span>
+                            </div>
+                            <h3>MotionVerse</h3>
+                            <p>Jogo web 2D em pixel art onde o jogador guia a Clara, sugada para dentro de um computador, coletando itens só com gestos: quatro webcams captam ao mesmo tempo o abrir e fechar da mão, e cada pessoa comanda um movimento. Também produzi as cutscenes e a trilha sonora.</p>
+                            <p class="highlight-text"><i class="fa-solid fa-user-gear"></i> Minha parte: home, cadastro, interface do jogo, sobre nós e acessibilidade com leitura por voz em português.</p>
+                            <div class="tech-tags">
+                                <span>HTML/CSS/JS</span>
+                                <span>Frontend</span>
+                                <span>Visão Computacional</span>
+                                <span>Acessibilidade</span>
+                            </div>
+                            <a href="https://github.com/CesarZanelatto/MotionVerse" target="_blank" rel="noopener" class="btn btn-outline project-link"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+                        </div>
+                        <div class="gallery gallery--feature">
+                            <figure class="shot shot--main"><img src="images/web/motion.jpg" alt="Tela inicial do MotionVerse" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/cut.jpg" alt="Cutscene do MotionVerse" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/game.jpg" alt="Gameplay do MotionVerse" loading="lazy" decoding="async"></figure>
+                        </div>
+                    </article>
+
+                    <article class="project-card hidden">
+                        <div class="project-card__info">
+                            <div class="project-meta">
+                                <span class="project-index">03</span>
+                                <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                                <span class="project-badge">Ação social</span>
+                            </div>
+                            <h3>Manutenção Solidária</h3>
+                            <p>Restauração de hardwares inoperantes: manutenção preventiva e corretiva, instalação de Linux e entrega de máquinas 100% funcionais ao Lar Anjo Gabriel.</p>
+                            <p class="highlight-text"><i class="fa-solid fa-heart"></i> TI e propósito andando junto.</p>
+                            <div class="tech-tags">
+                                <span>Hardware</span>
+                                <span>Linux Mint</span>
+                                <span>Ação Social</span>
+                            </div>
+                        </div>
+                        <div class="gallery gallery--duo">
+                            <figure class="shot"><img src="images/web/doacao.jpg" alt="Entrega dos computadores ao Lar Anjo Gabriel" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/doa.jpg" alt="Computadores restaurados para doação" loading="lazy" decoding="async"></figure>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--reverse hidden">
+                        <div class="project-card__info">
+                            <div class="project-meta">
+                                <span class="project-index">04</span>
+                                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                <span class="project-badge">20+ máquinas</span>
+                            </div>
+                            <h3>Montagem e Manutenção de Computadores</h3>
+                            <p>Já arrumei mais de 20 computadores, entre amigos, vizinhos e pessoas que me procuram por indicação. Recuperei máquinas que estavam paradas há mais de 10 anos, trazendo elas de volta à vida com diagnóstico, troca de peças e manutenção preventiva.</p>
+                            <p class="highlight-text"><i class="fa-solid fa-microchip"></i> Mais de 20 computadores recuperados por indicação.</p>
+                            <div class="tech-tags">
+                                <span>Hardware</span>
+                                <span>Montagem</span>
+                                <span>Manutenção</span>
+                            </div>
+                        </div>
+                        <div class="gallery gallery--quad">
+                            <figure class="shot"><img src="images/web/neide.jpg" alt="Computador em manutenção" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/aberto.jpg" alt="Gabinete aberto durante diagnóstico" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/macabrt.jpg" alt="Mac aberto para manutenção" loading="lazy" decoding="async"></figure>
+                            <figure class="shot"><img src="images/web/mac.jpg" alt="Mac recuperado e funcionando" loading="lazy" decoding="async"></figure>
+                        </div>
+                    </article>
+
                 </div>
             </div>
+        </section>
+    </main>
 
+    <footer id="contato" class="section contact">
+        <div class="container">
+            <div class="contact-card hidden">
+                <p class="eyebrow centered">$ contato --abrir<span class="cursor"></span></p>
+                <h2 class="section-title centered">Bora trocar uma ideia?</h2>
+                <p class="contact-text">Projeto, oportunidade ou só uma dúvida técnica: me chama que eu respondo.</p>
+                <div class="hero-actions centered">
+                    <a href="mailto:erikmauricio3@hotmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Enviar Email</a>
+                    <a href="https://wa.me/5511982144375" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+                <div class="social-links centered">
+                    <a href="https://github.com/erikfrvr" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/5511982144375" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/erik-mauricio-897624351/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:erikmauricio3@hotmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="footer-note">© <span id="year">2026</span> Erik Mauricio Silva · feito com HTML, CSS &amp; JS</p>
         </div>
-    </section>
-
-    <footer id="contato" class="contact">
-        <p class="eyebrow centered hidden">$ contato --abrir  <span class="cursor"></span></p>
-        <h2 class="section-title centered hidden">Bora trocar uma ideia?</h2>
-        <p class="contact-text hidden">Projeto, oportunidade ou só uma dúvida técnica me chama que eu respondo.</p>
-        <div class="hero-actions centered hidden">
-            <a href="mailto:erikmauricio3@hotmail.com" class="btn btn-primary">Enviar Email</a>
-            <a href="https://wa.me/5511982144375" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
-        </div>
-        <div class="social-links centered hidden">
-            <a href="https://github.com/erikfrvr" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-            <a href="https://wa.me/5511982144375" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/erik-mauricio-897624351/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:erikmauricio3@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <p class="footer-note">Criado por Erik Mauricio Silva — HTML, CSS &amp; JS.</p>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar imagem" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagem anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <figure class="lightbox__figure">
+            <img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima imagem"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
 
     <script src="script.js"></script>
 </body>
