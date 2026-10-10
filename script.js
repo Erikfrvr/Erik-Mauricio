@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const onScroll = () => {
         const y = window.scrollY;
         const ratio = maxScroll > 0 ? Math.min(Math.max(y / maxScroll, 0), 1) : 0;
-        progressBar.style.transform = `scaleX(${ratio})`;
+        progressBar.style.transform = `scaleX(${ratio}) translateZ(0)`;
         navbar.classList.toggle('scrolled', y > 20);
         backToTop.classList.toggle('visible', y > window.innerHeight * 0.8);
 

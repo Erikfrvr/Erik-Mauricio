@@ -136,10 +136,12 @@ body::after {
     left: 0;
     height: 3px;
     width: 100%;
-    transform: scaleX(0);
+    transform: scaleX(0) translateZ(0);
     transform-origin: left;
     background: var(--gradient);
     z-index: 1001;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 /* ---------- Tipografia utilitária ---------- */
@@ -203,6 +205,9 @@ nav {
     align-items: center;
     padding-inline: max(var(--gutter), calc((100% - 1200px) / 2 + var(--gutter)));
     z-index: 100;
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 /* O vidro fica num pseudo-elemento: backdrop-filter direto na nav prenderia o menu mobile (fixed) dentro dela */
@@ -305,6 +310,7 @@ nav.scrolled::before {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.35s, visibility 0.35s;
+    transform: translateZ(0);
 }
 
 .nav-overlay.active {
@@ -1159,19 +1165,21 @@ nav.scrolled::before {
     box-shadow: 0 12px 30px -8px rgba(139, 107, 255, 0.7);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(16px);
+    transform: translateY(16px) translateZ(0);
     transition: opacity 0.35s, visibility 0.35s, transform 0.35s var(--ease);
     z-index: 90;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .back-to-top.visible {
     opacity: 1;
     visibility: visible;
-    transform: none;
+    transform: translateZ(0);
 }
 
 .back-to-top:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) translateZ(0);
 }
 
 /* ---------- Lightbox ---------- */
@@ -1339,13 +1347,15 @@ nav.scrolled::before {
         background: var(--bg-panel);
         border-left: 1px solid var(--line);
         box-shadow: -20px 0 50px rgba(0, 0, 0, 0.5);
-        transform: translateX(100%);
+        transform: translateX(100%) translateZ(0);
         transition: transform 0.45s var(--ease);
         z-index: 99;
+        will-change: transform;
+        backface-visibility: hidden;
     }
 
     .nav-links.active {
-        transform: none;
+        transform: translateZ(0);
     }
 
     .nav-links a {
