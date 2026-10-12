@@ -32,6 +32,8 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--nav-h);
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    touch-action: pan-y pinch-zoom;
 }
 
 body {
@@ -41,6 +43,7 @@ body {
     overflow-x: hidden;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    touch-action: pan-y pinch-zoom;
 }
 
 body.no-scroll {
@@ -1416,6 +1419,7 @@ nav.scrolled::before {
         scroll-padding-inline: clamp(24px, 4.5vw, 52px);
         scrollbar-width: none;
         align-items: flex-start;
+        touch-action: pan-x pinch-zoom;
     }
 
     .gallery--phones::-webkit-scrollbar {
